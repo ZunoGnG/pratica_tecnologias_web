@@ -1,0 +1,427 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6F7D8C;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer img {
+    width: 100px;
+}
+
+.logoContainer p {
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+    color: #171E26;
+}
+
+.containerLogoutButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    padding: 10px;
+}
+
+.containerLogoutButton input[type=button] {
+    padding: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.containerLogoutButton input[type=button]:hover {
+    background-color: #171E26;
+    color: white;
+}
+
+.textInputs {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*Main*/
+main {
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#goPerfilLink {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: gray;
+    font-weight: 500;
+}
+
+.removeProductButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.removeProductButtonContainer input[type=button] {
+    background-color: white;
+    border: solid 1px #171E26;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.removeProductButtonContainer input[type=button]:hover {
+    background-color: #6F7D8C;
+    color: white;
+}
+
+.containerCenter {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+.containerImgProduct {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.containerImgProduct h2 {
+    color: #171E26;
+    font-size: 20px;
+}
+
+.containerImgProduct img {
+    width: 300px;
+}
+
+.editImageProduct input[type=button] {
+    background-color: white;
+    border: solid 1px #171E26;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.editImageProduct input[type=button]:hover {
+    background-color: #6F7D8C;
+    color: white;
+}
+
+.containerTextProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.textLine {
+    background-color: #dbdbdb;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.textLine h2 {
+    color: #171E26;
+    font-size: 20px;
+}
+
+.textLine p {
+    color: #171E26;
+    font-size: 18px;
+}
+
+.textLine input[type=button] {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.textLine input[type=button]:hover {
+    background-color: #6F7D8C;
+    color: white;
+}
+
+#textCurrentSituation {
+    color: green;
+}
+
+#currentySituation {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.containerChangePrice {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.priceValueInput {
+    width: 100px;
+}
+
+.editImageProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.containerChangeImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.removeProductMessage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+.removeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.insideContainerRemove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #6F7D8C;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #9d9bff;
+    row-gap: 10px;
+}
+
+.insideContainerRemove p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.containerRemoveButtons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.containerRemoveButtons input[type=button] {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.containerRemoveButtons input[type=button]:hover {
+    background-color: #171E26;
+    color: white;
+}
+
+.containerRemovedMessage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRemovedMessage p {
+    color: green;
+    background-color: #aeffad;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Footer*/
+footer {
+    background-color: #6F7D8C;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.containerCopyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerCopyRight p span {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:350px) {
+
+    .containerExternalLinks ul a,
+    .containerCopyRight p span {
+        font-size: 15px;
+    }
+}
+
+/* @media screen and (max-width:1055px) {
+    .containerCenter {
+        grid-template-columns: 30% 70%;
+    }
+
+    .containerTextProduct {
+        width: 75%;
+    }
+} */
+
+@media screen and (max-width:1050px) {
+    .containerImgProduct img {
+        width: 180px;
+    }
+
+    .containerCenter {
+        grid-template-columns: 45% 55%;
+    }
+    
+}
+
+@media screen and (max-width:710px) {
+    .textLine input[type=button] {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    main {
+        padding: 10px 10px 10px 0px;
+    }
+
+    .logoContainer img {
+        width: 50px;
+    }
+
+    .logoContainer p {
+        font-size: 18px;
+    }
+
+    .containerLogoutButton {
+        justify-content: center;
+        width: 150px;
+    }
+
+    .containerLogoutButton input[type=button] {
+        padding: 10px;
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    .containerCenter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+
+    .textInputs {
+        width: 90%;
+    }
+
+    #changeFileInput {
+        width: 116px;
+    }
+
+    .textLine{
+        margin-left: 5px;
+    }
+
+    .textLine h2 {
+        font-size: 15px;
+    }
+
+    .textLine p {
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .containerImgProduct h2 {
+        font-size: 15px;
+    }
+}

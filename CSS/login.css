@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6F7D8C;
+}
+
+header a{
+    text-decoration: none;
+    color: #171E26;
+}
+
+header a:visited{
+    text-decoration: none;
+    color: #171E26;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoContainer img{
+    width: 100px;
+}
+
+.logoContainer p{
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+    color: #171E26;
+}
+
+/*Alerta*/
+
+.containerError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+    height: 65px;
+}
+
+.containerIcon {
+    font-size: 35px;
+    font-weight: 500;
+    color: red;
+    font-family: cursive;
+    user-select: none;
+}
+
+.containerIcon p {
+    border: solid 1px red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.containerInfo {
+    height: 65px;
+    width: 535px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    row-gap: 20px;
+    padding: 10px;
+    border: solid 2px red;
+    border-radius: 10px;
+    background-color: #ffc6c6;
+}
+
+.containerText {
+    color: #171E26;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.containerText h1 {
+    font-size: 25px;
+}
+
+.containerText p {
+    color: #171E26;
+    font-size: 18px;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+#homeLink{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+}
+
+#homeLink img{
+    width: 40px;
+    opacity: 80%;
+}
+
+main h1{
+    color: #171E26;
+}
+
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 350px;
+    width: 300px;
+    padding: 10px;
+    background-color: #6F7D8C;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.formLine{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.formLine input{
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+}
+
+.formLine label{
+    font-size: 19px;
+}
+
+.externalLinksForm ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.externalLinksForm ul li a{
+    color: white;
+}
+
+.containerButton input[type=submit]{
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.containerButton input[type=submit]:hover{
+    background-color: #171E26;
+    color: white;
+}
+
+
+footer{
+    background-color: #6F7D8C;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.containerExternalLinks{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.containerExternalLinks ul a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.containerCopyRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerCopyRight p span{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    #formLogin{
+        width: 85%;
+    }
+
+    .formLine label{
+        font-size: 15px;
+    }
+
+    .containerExternalLinks ul a, .containerCopyRight p span{
+        font-size: 15px;
+    }
+}
